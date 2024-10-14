@@ -1,0 +1,48 @@
+/* Estilos básicos del formulario */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para mostrar los errores debajo de los inputs */
+small.error-message {
+    color: red;
+    display: none; /* Por defecto, los errores no son visibles */
+}
+
+/* Estilos cuando los inputs son válidos o no válidos */
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input.correcto, textarea.correcto {
+    border: 2px solid green;
+}
+
+input.incorrecto, textarea.incorrecto {
+    border: 2px solid red;
+}
